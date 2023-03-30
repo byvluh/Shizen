@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'arima';
+    src: url(../FONTS/Arima-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'abril';
+    src: url(../FONTS/AbrilFatface-Regular.ttf);
+}
+
+:root{
+    --background: #FFE9E9;
+    --fontcol: #BD6B73;
+    --shader: #FF9AA4;
+    --extracolor1: #ffafaf;
+    --extracolor2: #ffefef;
+    --valid: #D3FAD6;
+    --invalid: #FF7373;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'arima';
+    margin: 0;
+    background-image: url(../FORMULARIOS/IMG/backgroundhero.jpg);
+
+}
+
+.header{
+    grid-area: header; 
+    background-color: var(--extracolor2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 100px;
+    width: auto;
+    transition: .3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.5);
+} 
+
+.header .navlist {
+    list-style: none;
+}
+
+.header .navlist li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .navlist li:hover{
+    transform: scale(1.1);
+    
+}
+
+.header .navlist li a:hover{
+    color: var(--fontcol);
+}
+
+.header .navlist a{
+    font-weight: 700;
+    font-family: 'arima';
+    color: #ffa2a2;
+    text-decoration: none;
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: #FFE9E9;
+    padding: 9px 20px;
+    background: var(--shader);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: var(--invalid);
+    color: var(--extracolor2);
+    transform: scale(1.2);
+}
+
+.container{
+    width: 100%;
+    padding: 15px;
+}
+
+.registro{
+    background-color:#ffefef;
+    margin-top: 150px;
+    padding: 3px;
+    
+}
+
+h1{
+    text-align: center;
+    color: #BD6B73;
+    font-family: 'abril';
+    font-size: 40px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.inputcont{
+    margin-bottom: 15px;
+    border: 1px solid #BD6B73;
+
+}
+
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #BD6B73;
+}
+::placeholder{
+   background-color: transparent;
+    
+}
+
+.lab{
+    align-items: center;
+}
+
+
+.button{
+    border: none;
+    width: 100%;
+    color: #FFE9E9;
+    font-size: 20px;
+    background: #BD6B73;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: all .2s ;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: #ffafaf;
+
+    
+}
+p{
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+    color: #BD6B73;
+    font-weight: 600;
+}
+.link:hover{
+    color: #ffafaf;
+}
+
+@media (min-width:400px)
+{
+    .registro{
+        margin: auto;
+        width: 500px;
+        margin-top: 80px;
+        margin-bottom: 25px;
+        border-radius: 35px;
+    }
+}
